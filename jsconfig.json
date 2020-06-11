@@ -1,14 +1,6 @@
 {
   "include": ["**/*"],
-  "exclude": [
-    "build",
-    "e2e",
-    "node_modules",
-    "scripts",
-    "src/**/__tests__",
-    "jest-puppeteer.config.js"
-  ],
-  // https://github.com/facebook/create-react-app/blob/v3.4.0/packages/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+  "exclude": ["build", "e2e", "node_modules", "src/**/__tests__"],
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
