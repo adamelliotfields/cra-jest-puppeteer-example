@@ -52,7 +52,7 @@ By putting E2E tests in the top-level `e2e` folder, we won't have any overlap wi
 In order for Jest to search for test files in this folder, we need to update the `testMatch` and
 `roots` properties in our Jest config (see [`scripts/e2e.js`](./scripts/e2e.js)).
 
-See the complete test suite [here](./e2e/index.js).
+See the complete test suite [here](./e2e/index.test.js).
 
 ## WSL2
 
