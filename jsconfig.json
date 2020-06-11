@@ -1,0 +1,29 @@
+{
+  "include": ["**/*"],
+  "exclude": [
+    "build",
+    "e2e",
+    "node_modules",
+    "scripts",
+    "src/**/__tests__",
+    "jest-puppeteer.config.js"
+  ],
+  // https://github.com/facebook/create-react-app/blob/v3.4.0/packages/react-scripts/scripts/utils/verifyTypeScriptSetup.js
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "checkJs": true
+  }
+}
