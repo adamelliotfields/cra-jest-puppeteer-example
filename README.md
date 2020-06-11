@@ -73,6 +73,5 @@ approach does not require running an X Server in Windows.
 
 ## WTF
 
-Seriously.
-
-We should probably just use [`cypress`](https://github.com/cypress-io/cypress).
+You don't have to follow these steps (nor do you need to do any of the above on Windows) to use
+`jest-puppeteer`. This is more of an example of how to use `react-scripts` and `react-dev-utils`.
