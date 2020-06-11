@@ -70,3 +70,9 @@ The second option was simply to install Chromium manually. I'm running Debian 10
 `sudo apt install -y --no-install-recommends chromium`. This also required setting the
 `launch.executablePath` to `/usr/bin/chromium` in `jest-puppeteer.config.js`. Note that this
 approach does not require running an X Server in Windows.
+
+## WTF
+
+Seriously.
+
+We should probably just use [`cypress`](https://github.com/cypress-io/cypress).
