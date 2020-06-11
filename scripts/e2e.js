@@ -1,17 +1,20 @@
+// TypeScript thinks these are read-only properties.
+// @ts-ignore
 process.env.NODE_ENV = 'test';
 
 // Read your `.env` and `.env.test` files and set all your environment variables.
 // Note that NODE_ENV must be set before you `require` this module otherwise it will throw.
 require('react-scripts/config/env');
 
-// Re-setting NODE_ENV to test in case you have some shenanigans in your `.env` files.
+// @ts-ignore
+process.env.PUBLIC_URL = '';
+// @ts-ignore
 process.env.NODE_ENV = 'test';
 process.env.BABEL_ENV = 'test';
-process.env.PUBLIC_URL = '';
 process.env.BROWSER = 'none';
 
 /**
- * @type {(resolveFn: (relativePath: string) => string, rootDir: string, isEjecting: boolean) => object}
+ * @type {(resolveFn: (relativePath: string) => string, rootDir: string, isEjecting: boolean) => {[key: string]: any}}
  */
 const createJestConfig = require('react-scripts/scripts/utils/createJestConfig');
 const jest = require('jest');
