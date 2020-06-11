@@ -8,7 +8,8 @@ const { homepage } = require('./package.json');
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || 'localhost';
 const port = parseInt(process.env.PORT, 10) || 3000;
-const publicUrlOrPath = getPublicUrlOrPath(false, homepage).slice(0, -1);
+const publicUrl = process.env.PUBLIC_URL || '';
+const publicUrlOrPath = getPublicUrlOrPath(false, homepage, publicUrl).slice(0, -1);
 const { localUrlForBrowser } = prepareUrls(protocol, host, port, publicUrlOrPath);
 
 module.exports = {
